@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../multi/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../img/logoo.png" alt="logo"class="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/paquetes.html">Paquetes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/actividades.html">Actividades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/sobreNosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <br>
+        <hr>
+        <br>
+        <h2 class="titulo">Contacto</h2>
+        <div class="contenedor">
+            <form action="">
+                <Fieldset>
+                    <br>
+                    <div class="form">
+                        <label for="name">Nombre *</label>
+                        <input type="text" placeholder="Nombre" name="name" required>
+                    </div>
+                    <br>
+                    <div class="form">
+                        <label for="surname">Apellido *</label>
+                        <input type="text" placeholder="Apellido" name="surname" required>
+                    </div>
+                    <br>
+                    <div class="form">
+                        <label for="email">Correo electronico *</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <br>
+                    <div class="form">
+                        <label for="pais">Elije tu provincia *</label>
+                        <select name="pais" id="">
+                        <option value="ar">Mendoza</option>
+                        <option value="uy">Buenos Aires</option>
+                        <option value="cl">Cordoba</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="form">
+                        <label for="comentario">Escribe un comentario:</label><br>
+                        <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <br>
+                    <div>
+                    <input class="boton" type="submit" value="Enviar Datos">
+                    <input class="boton" type="reset" value="Borrar Datos">
+                    </div>
+                    <br>
+                </Fieldset>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <hr>
+        <nav class="menu">
+            <ul>
+                <li> <a href="../index.html">Inicio</a></li>
+                <li> <a href="paquetes.html">Paquetes</a></li>
+                <li> <a href="actividades.html">Actividades</a></li>
+                <li> <a href="sobreNosotros.html">Sobre Nosotros</a></li>
+                <li> <a href="contacto.html">Contacto</a></li> 
+            </ul>
+        </nav>
+        <div class="redes">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../multi/facebook.png" alt="Logo de Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../multi/instagram.png" alt="Logo de Instagram">
+            </a>
+        </div>
+        <div class="texto">
+        <p>2023 - @Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
