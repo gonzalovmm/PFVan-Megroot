@@ -1,142 +1,88 @@
-*{
-  background-color:#ecf0ef;
-  color:black ;
-  font-family: 'Mulish', sans-serif;
+* {
   margin: 0;
   padding: 0;
-}
-header{
-  background-color: #D9E6E4;
-}
-.menu {
-  align-items: center; /* Centra verticalmente el contenedor */
-  background-color: #D9E6E4;
-  display: flex;
-  font-size: 1.2rem;
-  justify-content: space-evenly; /* Centra horizontalmente el contenedor */
-  padding-top: 20px;
+  box-sizing: border-box;
 }
 
-.logo{
+body {
+  background-color: #ecf0ef;
+  font-family: "Mulish", sans-serif;
+}
+
+header nav div {
   background-color: #D9E6E4;
+  display: flex;
+}
+header nav div ul li a:hover {
+  color: rgba(77, 57, 105, 0.9647058824);
+  border-top: rgba(77, 57, 105, 0.9647058824) 1px solid;
+}
+header nav div ul li a .logo {
   display: flex;
   height: 250px;
   width: 350px;
 }
 
-.menu ul{
-  background-color: #D9E6E4;
+main {
+  /*carrusel*/
+}
+main .vinedos {
+  align-items: center;
   display: flex;
-  list-style: none;
-}
-
-.menu li{
-  background-color: #D9E6E4;
-  margin: 15px;
-}
-  
-.menu li a{
-  background-color: #D9E6E4;
-  color: rgb(0, 0, 0);
-  text-decoration: none; /*Borro el subrayado */
-}
-  
-.menu li a:hover{
-  color: purple;
-}
-
-.menu li a:active{
-  text-decoration: solid ;
-  text-decoration-color: purple;
-}
-
-/* BOTONES */
-.boton {
-  background-color: purple;
-  border-radius: 5rem;
-  border: none;
-  color: white;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
-  margin-top: 1rem;
-  padding: 1rem 1rem;
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-}
-.boton:hover{
-  color: purple;
-  border: 0.5px solid purple;
-  background-color: white;
-}
-
-.vinedos {
-  align-items: center; 
-  display: flex; 
-  height: 350px; 
-  justify-content: center; 
+  height: 400px;
+  justify-content: center;
   overflow: hidden;
   width: 100%;
 }
-
-.titulo{
-  color:black;
-  font-family: 'Playfair Display', serif;
+main .titulo {
+  color: black;
+  font-family: "Playfair Display", serif;
   font-size: 40px;
   font-style: normal;
   text-align: center;
   margin-bottom: 20px;
 }
-
-.destgrande{
+main .destgrande {
   align-items: center; /* Centra verticalmente el contenedor */
   display: flex;
   justify-content: space-evenly; /* Centra horizontalmente el contenedor */
 }
-
-.destacados {
+main .destgrande .destacados {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-img {
+main .destgrande .destacados img {
   height: 300px;
   vertical-align: middle;
   width: 300px;
 }
-  
-.subtitulo{
-  color:black;
+main .destgrande .destacados img h3 {
+  text-align: center;
+}
+main .destgrande .destacados img .subtitulo {
+  color: black;
   font-size: 20px;
   text-align: center;
 }
-  
-p {
-  font-size: 16px;
-  margin-top: 10px;
-  padding: 0px 96px;
-}
-
-/* ACTIVIDADES */
-.fotoact{
-  height: 180px;
-  width: 250px;
-}
-
-.rectangulo {
-  background-color: #f0f0f0; /* Color de fondo del rectángulo */
-  border-radius: 5px; /* Bordes redondeados del rectángulo */
-  border: 2px solid #333; /* Borde del rectángulo */
-  display: inline-block; /* Hace que el elemento se comporte como un bloque dentro del flujo de texto */
+main .destgrande .destacados2 {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 10px; /* Espacio dentro del rectángulo */
-  width: 230px; /* Ancho del rectángulo */
 }
-
-/* PAQUETES */
-.contenedor {
+main .destgrande .destacados2 img {
+  height: 300px;
+  width: 370px;
+}
+main .d-item {
+  height: 600px;
+}
+main .d-img {
+  height: 600px;
+  object-fit: cover;
+  filter: brightness(0, 6);
+}
+main .contenedor {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -145,36 +91,6 @@ p {
   position: relative;
 }
 
-.rectangulo2 {
-  background-color: #f0f0f0; /* Color de fondo del rectángulo */
-  border-radius: 5px; /* Bordes redondeados del rectángulo */
-  border: 2px solid #333; /* Borde del rectángulo */
-  display: inline-block; /* Hace que el elemento se comporte como un bloque dentro del flujo de texto */
-  padding: 10px; /* Espacio dentro del rectángulo */
-  text-align: center; /* Centra el texto horizontalmente */
-  width: 300px; /* Ancho del rectángulo */
-}
-
-.destacados2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.destacados2 img{
-  height: 300px;
-  width: 370px;
-}
-
-.ubicacion {
-  height: 510px; /* Esto centra verticalmente en la ventana del navegador */
-  align-self: auto;
-  margin-left: 42rem;
-  position: relative;
-  width: 600px;
-}
-
-/* FOOTER */
 footer {
   background-color: #D9E6E4;
   display: flex;
@@ -182,51 +98,51 @@ footer {
   margin-bottom: 1rem;
   margin-top: 5rem;
 }
-
-.footer .redes{
+footer .menu {
+  align-items: center; /* Centra verticalmente el contenedor */
+  background-color: #D9E6E4;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-evenly; /* Centra horizontalmente el contenedor */
+  padding-top: 20px;
+}
+footer .menu ul {
+  background-color: #D9E6E4;
+  display: flex;
+  list-style: none;
+}
+footer .menu ul li {
+  background-color: #D9E6E4;
+  margin: 15px;
+}
+footer .menu ul li a {
+  background-color: #D9E6E4;
+  color: rgb(0, 0, 0);
+  text-decoration: none; /*Borro el subrayado */
+}
+footer .menu ul li a:hover {
+  color: rgba(77, 57, 105, 0.9647058824);
+  border-top: rgba(77, 57, 105, 0.9647058824) 1px solid;
+}
+footer .redes {
   background-color: #D9E6E4;
   text-align: center;
 }
-
-.footer .redes a {
+footer .redes a {
   margin-left: 1rem;
   margin-right: 1rem;
   text-decoration: none;
 }
-
-.footer img{
+footer .redes a img {
   height: 30px;
   width: 30px;
 }
-
+footer .redes a img:hover {
+  transform: scale(1.2);
+}
 footer .texto {
   background-color: #D9E6E4;
   text-align: center;
 }
 
-footer p{
-  background-color: #D9E6E4;
-}
-
-footer br{
-  background-color: #D9E6E4;
-}
-
-fieldset{
-  display: flex;
-  flex-direction: column;
-  margin: 30px 0px;
-}
-
-textarea{
-  display: flex;
-  margin-left: 45px;
-}
-.d-item{
-  height: 600px;
-}
-.d-img{
-  height: 600px;
-  object-fit: cover;
-  filter: brightness(0,6);
-}
+/*# sourceMappingURL=estilo.css.map */

@@ -1,0 +1,30 @@
+header {
+    nav{
+        
+        div{
+            background-color: #D9E6E4;
+            display: flex;
+            ul{
+                
+                li{
+                    
+                    a{
+                        
+                        &:hover{
+                            color:#4d3969f6;
+                            border-top: #4d3969f6 1px solid;
+                        }
+                        .logo{
+                            
+                            display: flex;
+                            height: 250px;
+                            width: 350px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    
+  }
