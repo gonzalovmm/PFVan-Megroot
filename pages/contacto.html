@@ -46,50 +46,61 @@
         <hr>
         <br>
         <h2 class="titulo animate__animated animate__lightSpeedInLeft">Contacto</h2>
-        <div class="contenedor">
-            <form action="">
-                <Fieldset>
-                    <br>
-                    <div class="form">
-                        <label for="name">Nombre *</label>
-                        <input type="text" placeholder="Nombre" name="name" required>
-                    </div>
-                    <br>
-                    <div class="form">
-                        <label for="surname">Apellido *</label>
-                        <input type="text" placeholder="Apellido" name="surname" required>
-                    </div>
-                    <br>
-                    <div class="form">
-                        <label for="email">Correo electronico *</label>
-                        <input type="email" name="email" required>
-                    </div>
-                    <br>
-                    <div class="form">
-                        <label for="pais">Elije tu provincia *</label>
-                        <select name="pais" id="">
-                        <option value="ar">Mendoza</option>
-                        <option value="uy">Buenos Aires</option>
-                        <option value="cl">Cordoba</option>
-                        </select>
-                    </div>
-                    <br>
-                    <div class="form">
-                        <label for="comentario">Escribe un comentario:</label><br>
-                        <textarea name="comentario" id="" cols="30" rows="10"></textarea>
-                    </div>
-                    <br>
-                    <div>
-                    <input class="boton" type="submit" value="Enviar Datos">
-                    <input class="boton" type="reset" value="Borrar Datos">
-                    </div>
-                    <br>
-                </Fieldset>
-            </form>
+        <section class="formulario">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Nombre:*</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Gonzalo" required>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"> Apellido:*</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Van Megroot" required>
         </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Mail:*</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="gonzalo@gmail.com" required>
+              <div>
+                <br>
+
+                <label for="provincia">Elige tu provincia*</label>
+                <select name="provincia" id="">
+                    <option value="bsas">Buenos Aires</option>
+                    <option value="mdz">Mendoza</option>
+                    <option value="cor">Córdoba</option>
+                    <option value="sj">San Juan</option>
+                    <option value="sl">San Luis</option>
+                </select>
+            </div>
+              <br>
+              <div>
+                <label for="sex">Elige tu Género*</label>
+                <input type="radio" name="sex" value="Mujer">Mujer
+                <input type="radio" name="sex" value="hombre">Hombre
+                <input type="radio" name="sex" value="nb">No Binario
+  
+            </div>
+            <br>
+              <div>
+                <label for="nac">Selecciona tu fecha de nacimiento*</label>
+                <input type="date" name="nac" required>
+            </div>
+            <br>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Acepto bases y condiciones</label>
+              </div>
+              <div class="textarea">
+                <label for="comentario">Motivo de consulta</label>
+                      <br>
+                      <textarea name="comentario" id="" cols="30" rows="10" placeholder="(Opcional)"></textarea>
+  
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar Datos</button>
+              <button type="reset" class="btn btn-primary">Borrar Datos</button>
+            </form>
+         </section>
     </main>
     <footer class="footer">
-        <hr>
         <nav class="menu">
             <ul>
                 <li> <a href="../index.html">Inicio</a></li>

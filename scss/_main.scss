@@ -27,26 +27,111 @@ main{
                 height: 300px;
                 vertical-align: middle;
                 width: 300px;
-                h3{
-                    text-align: center;
-
+                &:hover{
+                    transform:scale(1.1);
+                    cursor: pointer;
                 }
-                .subtitulo{
-                    color:black;
-                    font-size: 20px;
+            }
+            .subtitulo{
+                    padding-top: 15px;
                     text-align: center;
-                  }
-              }
+                    color:black;
+                    font-size: 25px;
+                    text-align: center;
+            }
+        }   
+              
+    }
+    .contenedor1 {
+        display: flex;
+      
+        .contenedor2 {
+          flex: 1; /* Ocupa el 50% del ancho total */
+          padding: 20px; /* Agrega espaciado alrededor del contenido */
+      
+          .titulo {
+            font-family: 'Trebuchet MS';
+            font-size: 25px;
+            font-weight: bold;
           }
-          .destacados2 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            img{
-                height: 300px;
-                width: 370px;
-              }
-          }  
+      
+          p {
+            text-align: justify;
+            font-size: 18px;
+            margin-bottom: 20px; /* Agrega espacio entre los párrafos */
+          }
+      
+          .contenedorboton {
+            text-align: center;
+            margin-top: 20px;
+          }
+        }
+      
+        .contenedor3 {
+          flex: 1; /* Ocupa el 50% del ancho total */
+          overflow: hidden; /* Evita que la imagen se desborde del contenedor */
+          img {
+            width: 100%;
+            height: auto;
+            display: block; /* Elimina el espacio adicional debajo de la imagen */
+          }
+        }
+      }
+    .contenedor4 {
+        padding-top: 30px;
+        display: flex;
+      
+        .contenedor6 {
+          flex: 1; /* Ocupa el 50% del ancho total */
+          padding: 20px; /* Agrega espaciado alrededor del contenido */
+      
+          .titulo {
+            font-family: 'Trebuchet MS';
+            font-size: 25px;
+            font-weight: bold;
+          }
+      
+          p {
+            text-align: justify;
+            font-size: 18px;
+            margin-bottom: 20px; /* Agrega espacio entre los párrafos */
+          }
+      
+          .contenedorboton {
+            text-align: center;
+            margin-top: 20px;
+          }
+        }
+      
+        .contenedor5 {
+          flex: 1; /* Ocupa el 50% del ancho total */
+          overflow: hidden; /* Evita que la imagen se desborde del contenedor */
+          img {
+            width: 100%;
+            height: auto;
+            display: block; /* Elimina el espacio adicional debajo de la imagen */
+          }
+        }
+      }
+      .sobrentros{
+        
+        p{
+          text-align: justify;
+          font-size: 18px;
+          padding: 10px 20px;
+        }
+      }
+      .formulario {
+        background-color: #ebedf0;
+        max-width: 500px;
+        margin: 20px auto;
+        border: 5px solid #84a98c ;
+        padding: 1rem;
+        button{
+          background-color: #84a98c;
+          border: 5px solid #e8ece9;
+        }
+      }
     }
     /*carrusel*/
     .d-item{
@@ -65,5 +150,3 @@ main{
         padding: 20px 96px;
         position: relative;
       }
-
-}
